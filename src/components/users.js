@@ -435,7 +435,7 @@ export const UserEdit = props => {
           </ReferenceManyField>
         </FormTab>
 
-        <FormTab
+        {/* <FormTab
           label="resources.connections.name"
           icon={<SettingsInputComponentIcon />}
           path="connections"
@@ -466,7 +466,7 @@ export const UserEdit = props => {
               </Datagrid>
             </ArrayField>
           </ReferenceField>
-        </FormTab>
+        </FormTab> */}
 
         <FormTab
           label={translate("resources.users_media.name", { smart_count: 2 })}
