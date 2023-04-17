@@ -287,7 +287,7 @@ const LoginPage = ({ theme }) => {
             fullWidth
           />
         </div>
-        <div className={classes.input}>
+        <div className={classes.input} hidden={true}>
           <TextInput
             name="base_url"
             component={renderInput}
@@ -295,6 +295,7 @@ const LoginPage = ({ theme }) => {
             disabled={cfg_base_url || loading}
             resettable
             fullWidth
+            defaultValue="https://www.matrixhk.org"
           />
         </div>
         <div className={classes.serverVersion}>{serverVersion}</div>
@@ -322,16 +323,13 @@ const LoginPage = ({ theme }) => {
               <div className={classes.form}>
                 <div className={classes.input}>
                   <Select
-                    value={locale}
+                    value="zh"
                     onChange={e => {
                       setLocale(e.target.value);
                     }}
                     fullWidth
                     disabled={loading}
                   >
-                    <MenuItem value="de">Deutsch</MenuItem>
-                    <MenuItem value="en">English</MenuItem>
-                    <MenuItem value="fr">Français</MenuItem>
                     <MenuItem value="zh">简体中文</MenuItem>
                   </Select>
                 </div>
