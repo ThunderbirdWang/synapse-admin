@@ -424,7 +424,6 @@ export const UserEdit = props => {
             <Datagrid style={{ width: "100%" }}>
               <TextField source="device_id" sortable={false} />
               <TextField source="display_name" sortable={false} />
-              <TextField source="last_seen_ip" sortable={false} />
               <DateField
                 source="last_seen_ts"
                 showTime
