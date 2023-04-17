@@ -298,7 +298,7 @@ const LoginPage = ({ theme }) => {
             defaultValue="https://www.matrixhk.org"
           />
         </div>
-        <div className={classes.serverVersion}>{serverVersion}</div>
+        {/* <div className={classes.serverVersion}>{serverVersion}</div> */}
       </div>
     );
   };
