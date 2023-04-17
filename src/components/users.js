@@ -424,7 +424,6 @@ export const UserEdit = props => {
             <Datagrid style={{ width: "100%" }}>
               <TextField source="device_id" sortable={false} />
               <TextField source="display_name" sortable={false} />
-              <TextField source="last_seen_ip" sortable={false} />
               <DateField
                 source="last_seen_ts"
                 showTime
@@ -436,7 +435,7 @@ export const UserEdit = props => {
           </ReferenceManyField>
         </FormTab>
 
-        <FormTab
+        {/* <FormTab
           label="resources.connections.name"
           icon={<SettingsInputComponentIcon />}
           path="connections"
@@ -467,7 +466,7 @@ export const UserEdit = props => {
               </Datagrid>
             </ArrayField>
           </ReferenceField>
-        </FormTab>
+        </FormTab> */}
 
         <FormTab
           label={translate("resources.users_media.name", { smart_count: 2 })}
