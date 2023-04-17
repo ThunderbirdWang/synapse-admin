@@ -333,9 +333,9 @@ const LoginPage = ({ theme }) => {
                     <MenuItem value="zh">简体中文</MenuItem>
                   </Select>
                 </div>
-                <FormDataConsumer>
+                {/* <FormDataConsumer>
                   {formDataProps => <UserData {...formDataProps} />}
-                </FormDataConsumer>
+                </FormDataConsumer> */}
               </div>
               <CardActions className={classes.actions}>
                 <Button
