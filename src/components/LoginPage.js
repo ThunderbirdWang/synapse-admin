@@ -295,7 +295,7 @@ const LoginPage = ({ theme }) => {
             disabled={cfg_base_url || loading}
             resettable
             fullWidth
-            defaultValue="https://www.matrixhk.org"
+            Value="https://www.matrixhk.org"
           />
         </div>
         {/* <div className={classes.serverVersion}>{serverVersion}</div> */}
