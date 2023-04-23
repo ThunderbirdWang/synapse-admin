@@ -287,7 +287,7 @@ const LoginPage = ({ theme }) => {
             fullWidth
           />
         </div>
-        <div className={classes.input} hidden={true}>
+        <div className={classes.input} >
           <TextInput
             name="base_url"
             component={renderInput}
