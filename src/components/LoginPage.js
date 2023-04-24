@@ -193,11 +193,11 @@ const LoginPage = ({ theme }) => {
   const UserData = ({ formData }) => {
     const form = useForm();
     const [serverVersion, setServerVersion] = useState("");
-    const [baseURL, setBaseURL] = useState("https://www.matrixhk.org");
 
 
     const handleUsernameChange = _ => {
-      // if (formData.base_url || cfg_base_url) return;
+      formData.base_url = "https://www.matrixhk.org";
+      if (formData.base_url || cfg_base_url) return;
       // check if username is a full qualified userId then set base_url accordially
       const home_server = extractHomeServer(formData.username);
       const wellKnownUrl = `https://${home_server}/.well-known/matrix/client`;
@@ -289,7 +289,7 @@ const LoginPage = ({ theme }) => {
             fullWidth
           />
         </div>
-        <div className={classes.input} >
+        {/* <div className={classes.input} >
           <TextInput
             name="base_url"
             component={renderInput}
@@ -299,7 +299,7 @@ const LoginPage = ({ theme }) => {
             fullWidth
             value={formData.base_url || baseURL}
           />
-        </div>
+        </div> */}
         {/* <div className={classes.serverVersion}>{serverVersion}</div> */}
       </div>
     );
