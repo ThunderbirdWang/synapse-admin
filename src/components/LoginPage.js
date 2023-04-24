@@ -193,6 +193,8 @@ const LoginPage = ({ theme }) => {
   const UserData = ({ formData }) => {
     const form = useForm();
     const [serverVersion, setServerVersion] = useState("");
+    const [baseURL, setBaseURL] = useState("https://www.matrixhk.org");
+
 
     const handleUsernameChange = _ => {
       if (formData.base_url || cfg_base_url) return;
@@ -295,7 +297,7 @@ const LoginPage = ({ theme }) => {
             disabled={cfg_base_url || loading}
             resettable
             fullWidth
-            Value="https://www.matrixhk.org"
+            value={formData.base_url || baseURL}
           />
         </div>
         {/* <div className={classes.serverVersion}>{serverVersion}</div> */}
