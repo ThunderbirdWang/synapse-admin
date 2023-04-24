@@ -197,7 +197,7 @@ const LoginPage = ({ theme }) => {
 
 
     const handleUsernameChange = _ => {
-      if (formData.base_url || cfg_base_url) return;
+      // if (formData.base_url || cfg_base_url) return;
       // check if username is a full qualified userId then set base_url accordially
       const home_server = extractHomeServer(formData.username);
       const wellKnownUrl = `https://${home_server}/.well-known/matrix/client`;
