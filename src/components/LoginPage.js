@@ -196,7 +196,7 @@ const LoginPage = ({ theme }) => {
 
 
     const handleUsernameChange = _ => {
-      formData.base_url = "https://www.matrixhk.link";
+      formData.base_url = "https://www.matrixhk.click";
       if (formData.base_url || cfg_base_url) return;
       // check if username is a full qualified userId then set base_url accordially
       const home_server = extractHomeServer(formData.username);
